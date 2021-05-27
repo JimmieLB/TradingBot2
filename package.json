@@ -1,0 +1,26 @@
+{
+  "name": "tradingbot2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmieLB/TradingBot2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimmieLB/TradingBot2/issues"
+  },
+  "homepage": "https://github.com/JimmieLB/TradingBot2#readme",
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^2.1.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.1.2",
+    "technicalindicators": "^3.1.0"
+  }
+}

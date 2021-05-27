@@ -1,13 +1,16 @@
 const Alpaca = require('@alpacahq/alpaca-trade-api')
-const config = require("./config") || {keyId:"YOUR_KEY_HERE",secretKey:"SECRET_KEY_HERE"};
-const d3nLine = require('d3node-linechart');
-const output = require('d3node-output');
+let config;
+try{
+    config = require("./config");
+} catch {
+    config = {keyId:"YOUR_KEY_HERE",secretKey:"SECRET_KEY_HERE"};
+}
 const SMA = require("technicalindicators").SMA; // SMA means simple moving averages
 const moment = require("moment");
 
 let alpaca = new Alpaca({
-    keyId: config.MY_API_TOKEN,
-    secretKey: config.SECRET_API_KEY,
+    keyId: config.keyId,
+    secretKey: config.secretKey,
     paper: true
 });
 
